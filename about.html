@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Vegan Food</title>
+    <link rel="stylesheet" href="vegan1.css">
+    <style>
+       
+        .about-header {
+           
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .about-header h1 {
+            font-size: 48px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .about-header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .about-us {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .company-mission p, .our-values ul, .team-section p, .vision p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .our-values ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .our-values ul li {
+            font-size: 18px;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .our-values ul li:before {
+            content: '✓';
+            color: #4CAF50;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .team-section, .vision {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .team-section img, .vision img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            margin: 0 20px 20px 0;
+        }
+
+        .team-section p, .vision p {
+            flex: 1;
+        }
+
+        /* Add subtle fade-in animations */
+        .about-us section {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Vegan Food Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="vegan1.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Product.html">Products</a></li>
+                <li><a href="gallery">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <!-- this is Hero(content) section for About Us -->
+    <section class="about-header">
+        <div>
+            <h1>About Vegan Food</h1>
+            <p>Redefining the way the world eats, one vegan meal at a time</p>
+        </div>
+    </section>
+
+    <!-- Main About Us Content -->
+    <main class="about-us">
+        <!-- Mission Statement -->
+        <section class="company-mission">
+            <h2>Our Mission</h2>
+            <p>At Vegan Food, we are committed to offering the finest, ethically sourced plant-based meals, with a mission to revolutionize the way the world eats. We envision a future where healthy, sustainable food is the standard, not the exception. Our passion lies in creating dishes that are not only flavorful but promote a better world for generations to come.</p>
+        </section>
+
+        <!-- Core Values -->
+        <section class="our-values">
+            <h2>Our Core Values</h2>
+            <ul>
+                <li><strong>Sustainability:</strong> Every ingredient is thoughtfully selected to minimize our environmental impact.</li>
+                <li><strong>Quality:</strong> We believe that excellence is in the details—each dish is crafted with care and precision.</li>
+                <li><strong>Innovation:</strong> Constantly evolving, we push the boundaries of plant-based cuisine.</li>
+                <li><strong>Community:</strong> Together, we build a global movement focused on wellness, compassion, and a sustainable future.</li>
+            </ul>
+        </section>
+
+        <!-- Our Team -->
+        <section class="team-section">
+            <h2>Meet Our Experts</h2>
+            <img src="https://www.carrots-india.com/wp-content/uploads/2019/06/img_6672.jpg" alt="Vegan Food Team">
+            <p>Behind Vegan Food is a team of world-class chefs, nutritionists, and sustainability experts. Each member of our team shares a dedication to culinary excellence and a passion for promoting plant-based living. Their combined talents help us craft not just meals, but experiences that change the way you think about food.</p>
+        </section>
+
+        <!-- Our Vision -->
+        <section class="vision">
+            <h2>Our Vision</h2>
+            <img src="https://img.freepik.com/premium-photo/vegan-food-concept_917664-11053.jpg" alt="Vision for Vegan Food">
+            <p>Our vision is simple: to become the global leader in plant-based cuisine, known for exceptional quality and a commitment to the planet. By constantly innovating and staying true to our values, we aim to set a new standard for what vegan food can be—delicious, accessible, and impactful.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>At Vegan Food, we believe in providing our customers with more than just food. We offer a lifestyle that is healthy, ethical, and sustainable.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="#">Contact US</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: ganapakaakash@veganfood.com</p>
+                <p>Phone: +91 9391165044</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Vegan Food | All Rights Reserved
+        </div>
+    </footer>
+</body>
+</html>

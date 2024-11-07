@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Vegan Food</title>
+    <link rel="stylesheet" href="vegan1.css">
+    <style>
+        /* Menu page specific styles */
+        .menu-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('menu_banner.jpg') center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .menu-header h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .menu-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .menu-category {
+            margin-bottom: 50px;
+        }
+
+        .menu-category h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .menu-item {
+            flex: 1 1 calc(33.333% - 20px);
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-item-content {
+            padding: 15px;
+        }
+
+        .menu-item h4 {
+            font-size: 24px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .menu-item p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .menu-item .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Vegan Food Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="vegan1.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Menu.html" class="active">Menu</a></li>
+                <li><a href="Product.html">Products</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <!-- Hero section for Menu -->
+    <section class="menu-header">
+        <div>
+            <h1>Our Vegan Menu</h1>
+        </div>
+    </section>
+
+    <!-- Menu Content -->
+    <main class="menu-section">
+        <!-- Starters Category -->
+        <section class="menu-category">
+            <h2>Starters</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://reciperunner.com/wp-content/uploads/2019/07/Summer-Quinoa-Salad-Photo.jpg" alt="Starter 1">
+                    <div class="menu-item-content">
+                        <h4>Quinoa Salad</h4>
+                        <p>A fresh mix of quinoa, veggies, and citrus dressing.</p>
+                        <div class="price">$10.99</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.connoisseurusveg.com/wp-content/uploads/2022/04/baked-spring-rolls-sq.jpg" alt="Starter 2">
+                    <div class="menu-item-content">
+                        <h4>Vegan Spring Rolls</h4>
+                        <p>Crispy rolls filled with seasonal vegetables.</p>
+                        <div class="price">$8.99</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i0.wp.com/www.relishthebite.com/wp-content/uploads/2015/03/TOFU-2.jpg" alt="Starter 3">
+                    <div class="menu-item-content">
+                        <h4>Spicy Tofu Bites</h4>
+                        <p>Fried tofu served with a spicy dipping sauce.</p>
+                        <div class="price">$9.99</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Course Category -->
+        <section class="menu-category">
+            <h2>Main Course</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLwrgUNwwLS8mctCl3_ynMWVT16JNHOgid1A&s" alt="Main Course 1">
+                    <div class="menu-item-content">
+                        <h4>Vegan Buddha Bowl</h4>
+                        <p>A nourishing bowl of grains, greens, and proteins.</p>
+                        <div class="price">$14.99</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIToCD6bG9_iB8dXCFTfQyoJKjaXCmoxH9Dg&s" alt="Main Course 2">
+                    <div class="menu-item-content">
+                        <h4>Grilled Veggie Platter</h4>
+                        <p>A medley of grilled seasonal vegetables.</p>
+                        <div class="price">$12.99</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXYNvX_3gyaQL8AB-1Mc6d6u1bKEiKhmO7kw&s" alt="Main Course 3">
+                    <div class="menu-item-content">
+                        <h4>Vegan Pasta Primavera</h4>
+                        <p>Pasta with fresh vegetables in a creamy vegan sauce.</p>
+                        <div class="price">$13.99</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desserts Category -->
+        <section class="menu-category">
+            <h2>Desserts</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8sRIFopS28jScMnFx8e9rQcEkFaPiBCy0uA&s" alt="Dessert 1">
+                    <div class="menu-item-content">
+                        <h4>Vegan Chocolate Cake</h4>
+                        <p>Rich chocolate cake made with vegan ingredients.</p>
+                        <div class="price">$6.99</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWWgBHMghE5dFEg9plsB7mIJs-RWNP0Qv2kg&s" alt="Dessert 2">
+                    <div class="menu-item-content">
+                        <h4>Coconut Ice Cream</h4>
+                        <p>Delicious coconut milk-based ice cream.</p>
+                        <div class="price">$5.99</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2PZwRFn82KfkQ-dJ1elYkSDRqUCvWln9i0g&s" alt="Dessert 3">
+                    <div class="menu-item-content">
+                        <h4>Fruit Tart</h4>
+                        <p>A crisp tart filled with fresh seasonal fruits.</p>
+                        <div class="price">$7.99</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>At Vegan Food, we are passionate about offering wholesome, plant-based meals that contribute to a healthier lifestyle and a more sustainable planet.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="vegan1.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: ganapakaakash@veganfood.com</p>
+                <p>Phone: +91 9391165044</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Vegan Food | All Rights Reserved
+        </div>
+    </footer>
+</body>
+</html>
